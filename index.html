@@ -39,7 +39,7 @@
                   alt="checkbox"
                   srcset=""
                 />
-                <p class="ml-2 font-bold text-lg">23</p>
+                <p class="ml-2 font-bold text-lg" id="nav-count">23</p>
               </div>
             </div>
             <button id="change-btn">
@@ -64,7 +64,9 @@
                     </div>
                     <div>
                       <div class="text-sm text-gray-500">Task Assigned</div>
-                      <div class="text-lg font-semibold">05</div>
+                      <div class="text-lg font-semibold" id="task-count">
+                        05
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -90,8 +92,8 @@
                       <img src="assets/calender.png" alt="Calender" />
                     </div>
                     <div>
-                      <div class="text-sm text-gray-500">Wed,</div>
-                      <div class="text-lg font-semibold">Jul 28 2025</div>
+                      <div class="text-sm text-gray-500" id="show-day"></div>
+                      <div class="text-lg font-semibold" id="show-date"></div>
                     </div>
                   </div>
                 </div>
@@ -125,6 +127,8 @@
                     </div>
                     <button
                       class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                      id="complete-btn"
+                      data-task-title="Fix Mobile Button Issue"
                     >
                       Completed
                     </button>
@@ -152,6 +156,8 @@
                     </div>
                     <button
                       class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                      id="complete-btn"
+                      data-task-title="Add Dark Mode"
                     >
                       Completed
                     </button>
@@ -178,6 +184,8 @@
                     </div>
                     <button
                       class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                      id="complete-btn"
+                      data-task-title="Optimize Home page"
                     >
                       Completed
                     </button>
@@ -204,6 +212,8 @@
                     </div>
                     <button
                       class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                      id="complete-btn"
+                      data-task-title="Add new emoji 👯"
                     >
                       Completed
                     </button>
@@ -232,6 +242,8 @@
                     </div>
                     <button
                       class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                      id="complete-btn"
+                      data-task-title="Integrate OpenAI API"
                     >
                       Completed
                     </button>
@@ -260,6 +272,8 @@
                     </div>
                     <button
                       class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                      id="complete-btn"
+                      data-task-title="Improve Job searching"
                     >
                       Completed
                     </button>
@@ -276,15 +290,10 @@
               <p class="ml-2">Activity Log</p>
             </div>
             <div class="flex justify-center items-center">
-              <button class="btn btn-primary mt-6">Clear History</button>
+              <button class="btn btn-primary mt-6" id="clear-btn">Clear History</button>
             </div>
             <div class="mt-5 border-b-1 border-base-300 border-dashed"></div>
-            <p class="my-4 bg-blue-50 p-2 rounded-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
-            </p>
-            <p class="my-4 bg-blue-50 p-2 rounded-lg">
-              You have Complete The Task Add Dark Mode at 12:48:15 PM
-            </p>
+            <div id="activity-log"></div>
           </div>
           <!-- Activity Section End -->
         </div>
