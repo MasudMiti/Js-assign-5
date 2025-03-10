@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <!-- DaisyUI Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dev Board | Blogs</title>
+  </head>
+  <body>
+    <div class="p-4 font-[Poppins] bg-blue-50 h-screen" id="root">
+      <!-- Header Start -->
+      <header class="container mx-auto">
+        <div class="navbar bg-base-100 shadow-sm rounded-lg">
+          <div class="flex-1">
+            <div class="flex items-center">
+              <img src="assets/logo.png" alt="Logo" />
+              <p class="ml-2">Dev<span class="font-bold">Board</span></p>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="dropdown dropdown-end">
+              <div
+                class="flex items-center mr-4 bg-blue-50 px-3 py-1 rounded-2xl"
+              >
+                <img
+                  class="w-[22px]"
+                  src="assets/checkbox.png"
+                  alt="checkbox"
+                  srcset=""
+                />
+                <p class="ml-2 font-bold text-lg">23</p>
+              </div>
+            </div>
+            <button id="change-btn">
+              <img src="assets/theme-btn.png" alt="Theme" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+      <!-- Main Section Start -->
+      <!-- Left Header Start -->
+      <section class="container mx-auto my-4">
+        <div class="grid grid-cols-4 gap-4">
+          <div class="col-start-1 col-end-4">
+            <div class="bg-white rounded-lg p-6">
+              <div class="grid grid-cols-4 gap-4 justify-center items-center">
+                <div class="col-span-1 col-start-1 bg-blue-50 py-6 rounded-lg">
+                  <!-- Left Section -->
+                  <div class="flex justify-center items-center flex-shrink">
+                    <div class="bg-white text-blue-700 rounded-full p-2 mr-2">
+                      <img src="assets/checkbox.png" alt="Checkbox" />
+                    </div>
+                    <div>
+                      <div class="text-sm text-gray-500">Task Assigned</div>
+                      <div class="text-lg font-semibold">05</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-start-2 col-end-4">
+                  <!-- Middle Section -->
+                  <div
+                    class="gradient-code text-white rounded-lg p-4 flex-shrink"
+                  >
+                    <div class="flex px-16 justify-center items-center">
+                      <img
+                        class="w-16 mr-8"
+                        src="assets/board.png"
+                        alt="Board"
+                      />
+                      <div class="">Discover Something New Today!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-1 col-end-5 bg-blue-50 py-6 rounded-lg">
+                  <!-- Right Section -->
+                  <div class="flex justify-center items-center flex-shrink">
+                    <div class="bg-white text-gray-700 rounded-full p-2 mr-2">
+                      <img src="assets/calender.png" alt="Calender" />
+                    </div>
+                    <div>
+                      <div class="text-sm text-gray-500">Wed,</div>
+                      <div class="text-lg font-semibold">Jul 28 2025</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Card Section Start -->
+              <div
+                class="mt-8 mb-2 border-b-1 border-base-300 border-dashed"
+              ></div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6"
+              >
+                <!-- Card 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <h6
+                    class="text-sm text-gray-600 inline bg-white rounded-md p-2"
+                  >
+                    ShopEase
+                  </h6>
+                  <h3 class="font-semibold text-lg mt-2">
+                    Fix Mobile Button Issue
+                  </h3>
+                  <div
+                    class="bg-white rounded-md p-2 mt-2 text-sm text-gray-500"
+                  >
+                    Debug using Chrome<br />DevTools, check for overlappi...
+                  </div>
+                  <div class="flex items-center justify-between mt-4">
+                    <div>
+                      <div class="text-xs text-gray-500">Deadline</div>
+                      <div class="text-sm">21 March 2025</div>
+                    </div>
+                    <button
+                      class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                    >
+                      Completed
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <h6
+                    class="text-sm text-gray-600 inline bg-white rounded-md p-2"
+                  >
+                    CloudSync
+                  </h6>
+                  <h3 class="font-semibold text-lg mt-2">Add Dark Mode</h3>
+                  <div
+                    class="bg-white rounded-md p-2 mt-2 text-sm text-gray-500"
+                  >
+                    Store the user's preference in<br />localStorage, update CSS
+                    vari...
+                  </div>
+                  <div class="flex items-center justify-between mt-4">
+                    <div>
+                      <div class="text-xs text-gray-500">Deadline</div>
+                      <div class="text-sm">21 March 2025</div>
+                    </div>
+                    <button
+                      class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                    >
+                      Completed
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <h6
+                    class="text-sm text-gray-600 inline bg-white rounded-md p-2"
+                  >
+                    SwiftPay
+                  </h6>
+                  <h3 class="font-semibold text-lg mt-2">Optimize Home page</h3>
+                  <div
+                    class="bg-white rounded-md p-2 mt-2 text-sm text-gray-500"
+                  >
+                    Debug using Chrome<br />DevTools, check for overlappi...
+                  </div>
+                  <div class="flex items-center justify-between mt-4">
+                    <div>
+                      <div class="text-xs text-gray-500">Deadline</div>
+                      <div class="text-sm">21 March 2025</div>
+                    </div>
+                    <button
+                      class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                    >
+                      Completed
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <h6
+                    class="text-sm text-gray-600 inline bg-white rounded-md p-2"
+                  >
+                    Meta
+                  </h6>
+                  <h3 class="font-semibold text-lg mt-2">Add new emoji 👯</h3>
+                  <div
+                    class="bg-white rounded-md p-2 mt-2 text-sm text-gray-500"
+                  >
+                    Debug using Chrome<br />DevTools, check for overlappi...
+                  </div>
+                  <div class="flex items-center justify-between mt-4">
+                    <div>
+                      <div class="text-xs text-gray-500">Deadline</div>
+                      <div class="text-sm">21 March 2025</div>
+                    </div>
+                    <button
+                      class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                    >
+                      Completed
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <h6
+                    class="text-sm text-gray-600 inline bg-white rounded-md p-2"
+                  >
+                    Google LLC
+                  </h6>
+                  <h3 class="font-semibold text-lg mt-2">
+                    Integrate OpenAI API
+                  </h3>
+                  <div
+                    class="bg-white rounded-md p-2 mt-2 text-sm text-gray-500"
+                  >
+                    Debug using Chrome<br />DevTools, check for overlappi...
+                  </div>
+                  <div class="flex items-center justify-between mt-4">
+                    <div>
+                      <div class="text-xs text-gray-500">Deadline</div>
+                      <div class="text-sm">21 March 2025</div>
+                    </div>
+                    <button
+                      class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                    >
+                      Completed
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-md p-4">
+                  <h6
+                    class="text-sm text-gray-600 inline bg-white rounded-md p-2"
+                  >
+                    Glassdoor
+                  </h6>
+                  <h3 class="font-semibold text-lg mt-2">
+                    Improve Job searching
+                  </h3>
+                  <div
+                    class="bg-white rounded-md p-2 mt-2 text-sm text-gray-500"
+                  >
+                    Debug using Chrome<br />DevTools, check for overlappi...
+                  </div>
+                  <div class="flex items-center justify-between mt-4">
+                    <div>
+                      <div class="text-xs text-gray-500">Deadline</div>
+                      <div class="text-sm">21 March 2025</div>
+                    </div>
+                    <button
+                      class="btn btn-primary text-white font-bold py-2 px-4 rounded"
+                    >
+                      Completed
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Card Section End -->
+            </div>
+          </div>
+          <!-- Activity Section Start -->
+          <div class="col-start-4 col-end-5 bg-white p-6 rounded-lg">
+            <div class="flex justify-center">
+              <img src="assets/activity.png" alt="Activity" />
+              <p class="ml-2">Activity Log</p>
+            </div>
+            <div class="flex justify-center items-center">
+              <button class="btn btn-primary mt-6">Clear History</button>
+            </div>
+            <div class="mt-5 border-b-1 border-base-300 border-dashed"></div>
+            <p class="my-4 bg-blue-50 p-2 rounded-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+            <p class="my-4 bg-blue-50 p-2 rounded-lg">
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+          </div>
+          <!-- Activity Section End -->
+        </div>
+      </section>
+    </div>
+    <!-- Left Section End -->
+    <!-- Main Section End -->
+    <!-- DaisyUI JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
